@@ -1,0 +1,43 @@
+# 米国株価スクレイピング
+
+## 概要
+
+CSVファイル(TIP)を読み込んで株価、配当利回りをスクレイピング
+配当利回りが高い順に並べ替える
+
+txtファイルに書き出す
+
+
+## 利用方法
+
+### 初期準備
+
+'''
+$ docker pull python:3.6 
+$ docker run -it --name pytest python:3.6 /bin/bash
+$ cd /home
+
+// vimをインストール！(これないとキツイ)
+$ apt-get update
+$ apt-get install vim
+
+// 必要ライブラリ
+$ pip install requests
+$ pip install beautifulsoup4
+$ pip install lxml
+
+$ cd /home
+$ git clone https://github.com/toitoi104/scraping-stock-price.git
+'''
+
+### すでにコンテナがある場合
+
+'''
+// 動いてるか停止してるかチェック
+$ docker ps
+$ docker ps -a
+
+$ docker start コンテナID
+$ docker exec -i -t コンテナ名 bash 
+
+'''

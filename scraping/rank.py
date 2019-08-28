@@ -42,18 +42,4 @@ with open('./csv2.csv', newline='') as f:
     for r in stocks:
         with open(path_w, mode='a') as f:
             f.write(r['tip'] + ',' + str(r['price']) + ',' + str(r['payout']))
-            f.write():wq
             
-
-
-        #if len(price) != 0:
-         #   print(row[0])
-          #  print(price[0].string)
-           # print(payout.string)
-        #if len(price2) != 0:
-         #   print(row[0])
-          #  print(price2[0].string)
-           # print(payout.string)
-        #price = soup.find("ul", attrs={"class", "price"})
-        #print(price)
-
